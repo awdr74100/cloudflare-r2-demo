@@ -18,7 +18,7 @@ const upload = async (e: Event) => {
   });
 
   try {
-    const { url } = await $fetch("/api/upload", {
+    const { url } = await $fetch("/api/fetch", {
       method: "POST",
       body: formData,
     });
